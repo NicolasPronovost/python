@@ -1,6 +1,6 @@
 #fast but fat
 
 def user1():
-    speed
+    speed 
     agility
     luck
