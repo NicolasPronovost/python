@@ -1,6 +1,10 @@
 import random
+import app
+import user1
+import user2
 
-def rollDice(modifier):
-    return random.randrange(2,11) + modifier
-
-print (rollDice(2))
+player=app.step1()
+if player == "user1":
+    user1.user1hiding()
+else:
+    user2.user2hiding()    

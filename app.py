@@ -1,13 +1,18 @@
 import random
-import game
 import user1
 import user2
 
-def hello():
-    print("hello this is hid or die")
+def step1():
+    print ("This is hide or die")
 
-def ChoseUser():
-   player = input ("Who do you want to play as")
-    
+    choose = True
+    while choose:
+        player = input("Who do you want to play as: ")
+        if player == "user1" or player == "user2":
+            print("you will be playing as", player)
+            choose = False
+    return(player)
 
-#def UserOption():
+def step2():
+    userlocation = input("where would you like to hid: ")
+
