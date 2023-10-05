@@ -14,5 +14,13 @@ def step1():
     return(player)
 
 def step2():
-    userlocation = input("where would you like to hid: ")
+    choose = True
+    while choose:
+        hidingspot = input("Where do you want to hid: ")
+        if hidingspot == "spot1" or hidingspot == "spot2":
+            print("you will be hiding at", hidingspot)
+            choose = False
+    return(player)
+
+   
 
