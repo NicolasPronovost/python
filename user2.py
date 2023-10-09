@@ -4,7 +4,7 @@ import random
 def user2hiding():
     diceroll = random.randint(2,12)
     if diceroll == 2 or diceroll == 3 or diceroll == 4 or diceroll == 5:
-        print("you died whit a dice roll of", diceroll, "game over")
+        print("you took your time walking over to the satrting point and it cost you. Whit a roll of", diceroll, "you didn't even make it and got cought, game over")
         exit()
     else:
         print("you have survied step 1 whit a roll of", diceroll) 
@@ -12,7 +12,7 @@ def user2hiding():
 def user2HidingSpot1():
     diceroll = random.randint(2,12)
     if diceroll == 2 or diceroll == 3:
-        print("you did not make it to the hiding spot in time. Your rolled a", diceroll, " and died game over")
+        print("you did not make it to the hiding spot in time. Your rolled a", diceroll, "and got cought game over")
         exit()
     else:
         print("You rolled a", diceroll, "and have made it to your hiding spot congrats")
@@ -21,23 +21,8 @@ def user2HidingSpot1():
 def user2HidingSpot2():
     diceroll = random.randint(2,12)
     if diceroll == 2 or diceroll == 3 or diceroll == 4 or diceroll == 5:
-        print("you did not make it to the hiding spot in time. Your rolled a", diceroll, " and died game over")
+        print("you did not make it to the hiding spot in time. Your rolled a", diceroll, "and got cought game over")
         exit()
     else:
         print("You rolled a", diceroll, "and have made it to your hiding spot congrats")
 
-
-
-
-
-
-
-
-
-def user2beingseeked():
-    diceroll2 = random.randint(2,12)
-    if diceroll2 == 2 or diceroll2 == 3:
-       print("The seeker has found whit a roll of", diceroll2, "game over")
-       exit()
-    else:
-        print("you have not yet ben found luck numer", diceroll2, "saved you")

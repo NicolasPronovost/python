@@ -10,16 +10,16 @@ else:
     user2.user2hiding()    
 
 if player == "user1":
-    hiding = input("where do you want to hid: ")
-    print ("you will be hiding in", hiding)
+    hiding = input("You made it here whit out detection now you have a choise. spot1 is close but but dosn't provid lots of cover, spot2 is a little farther down the road but has a nice box to hid behind. Where are you going to hid?: ")
+    print ("Bold of you let's hope it works out in", hiding)
     if hiding == "spot1":
         user1.user1HidingSpot1()
     else:
         user1.user1HidingSpot2()
 
 if player == "user2":
-    hiding = input("where do you want to hid: ")
-    print (player, "you will be hiding in", hiding)
+    hiding = input("You made it here whit out detection now you have a choise. spot1 is close but but dosn't provid lots of cover, spot2 is a little farther down the road but has a nice box to hid behind. Where are you going to hid?: ")
+    print (player, "That's a bold choise let's hope it workes out for you in", hiding)
     if hiding == "spot1":
         user2.user2HidingSpot1()
     else:
