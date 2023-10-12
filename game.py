@@ -30,11 +30,11 @@ print ("the seeker will now chose if he will be going to spot 1 or spot 2 good l
 seeker = random.randint(1,2)
 print ("the seeker is going to spot", seeker)
 
-
+#if seeker choses hiding spot1
 if seeker == 1:
     if hiding == "spot1":
         print("the seeker has chosent your hiding spot good luck")
-        if player == "user1":
+        if player == "user1": #the odds set by user1
             print ("the seeker is at your hiding spot you chooses speed over size you got a slim chance he dosn't see you good luck")
             diceroll = random.randint(2,12)
             print ("you need a 12 or an 11 to survive let's see what you roll. You rolled", diceroll)
@@ -44,7 +44,7 @@ if seeker == 1:
             else:
                 print ("the seeker saw you... You try to run but it's no use you look back and all you see is darknes death you just lost")
                 exit()
-        else:
+        else: #the odds set by user2
             print ("you sacrifisted speed for this moment right here your small let's hope the seeker can't see you behind the box")
             diceroll = random.randint(2,12)
             print ("you need a 12 to a 9 to survive let's see what you roll. You rolled", diceroll)
@@ -54,14 +54,15 @@ if seeker == 1:
             else:
                 print ("the seeker saw you... You try to run but it's no use you look back and all you see is darknes death you just lost")
                 exit()
-    else:
+    else: # if he chose spot 2 and you are not there, there is noting for the seeker to do you win
         print ("the seeker did not come to your hiding spot congrats you win")
         exit()
 
+#if seeker choses hiding spot2
 if seeker == 2:
     if hiding == "spot2":
         print("the seeker has chosent your hiding spot good luck")
-        if player == "user1":
+        if player == "user1": # the odds set by user1
             print ("the seeker is at your hiding spot you chooses speed over size you got a slim chance he dosn't see you good luck")
             diceroll = random.randint(2,12)
             print ("you need a 12 or an 11 to survive let's see what you roll. You rolled", diceroll)
@@ -71,7 +72,7 @@ if seeker == 2:
             else:
                 print ("the seeker saw you... You try to run but it's no use you look back and all you see is darknes death you just lost")
                 exit()
-        else:
+        else: #the odds set by user2
             print ("you sacrifisted speed for this moment right here your small let's hope the seeker can't see you behind the box")
             diceroll = random.randint(2,12)
             print ("you need a 12 to a 9 to survive let's see what you roll. You rolled", diceroll)
@@ -81,6 +82,6 @@ if seeker == 2:
             else:
                 print ("the seeker saw you... You try to run but it's no use you look back and all you see is darknes death you just lost")
                 exit()
-    else:
+    else: # if he chose spot 2 and you are not there, there is noting for the seeker to do you win
         print ("the seeker did not come to your hiding spot congrats you win")
         exit()

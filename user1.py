@@ -1,4 +1,4 @@
-#fast but fat
+#fast but big
 import random
 
 def user1hiding():
